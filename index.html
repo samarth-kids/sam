@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Om - AI Summarizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Om-Many to one</h1>
+
+    <!-- ✅ Model status indicator -->
+    <div id="status" class="status">
+      <span class="dot gray"></span>
+      Checking model status...
+    </div>
+
+    <div class="chat-box" id="chatBox"></div>
+
+    <textarea id="inputText" placeholder="Ask me anything..."></textarea>
+
+    <select id="summaryLength">
+      <option value="short">Short</option>
+      <option value="medium" selected>Medium</option>
+      <option value="long">Long</option>
+    </select>
+
+    <div class="controls">
+     <button onclick="summarize()">Send</button>
+<button onclick="clearChat()">Clear Chat</button>
+<button onclick="startVoiceInput()">🎤 Voice</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
