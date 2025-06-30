@@ -15,12 +15,12 @@ async function checkModelStatus() {
     const data = await res.json();
 
     if (data?.lastModified) {
-      statusEl.innerHTML = `<span class="dot green"></span> apke sabar ka fal tayar hai`;
+      statusEl.innerHTML = `<span class="dot green"></span> Om is ready`;
     } else {
-      statusEl.innerHTML = `<span class="dot red"></span> sabar kr`;
+      statusEl.innerHTML = `<span class="dot red"></span> Om is not ready`;
     }
   } catch (err) {
-    statusEl.innerHTML = `<span class="dot red"></span> wapis koshish kare`;
+    statusEl.innerHTML = `<span class="dot red"></span> Failed to check status`;
   }
 }
 
