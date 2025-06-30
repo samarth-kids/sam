@@ -15,7 +15,7 @@ async function checkModelStatus() {
     const data = await res.json();
 
     if (data?.lastModified) {
-      statusEl.innerHTML = `<span class="dot green"></span> Om tayar hai`;
+      statusEl.innerHTML = `<span class="dot green"></span> Om is ready`;
     } else {
       statusEl.innerHTML = `<span class="dot red"></span> Om is not ready`;
     }
