@@ -1,5 +1,5 @@
 const API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn";
-const API_TOKEN = "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"; // Replace with yours if needed
+const API_TOKEN = "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"; // Replace with yours if needed
 
 const chatBox = document.getElementById("chatBox");
 const inputText = document.getElementById("inputText");
